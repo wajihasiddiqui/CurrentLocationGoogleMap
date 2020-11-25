@@ -27,9 +27,10 @@ import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private GoogleMap mMap;
     LocationManager location;
 
-    private GoogleMap mMap;
+
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -144,10 +145,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
+          mMap = googleMap;
 //
 //        LatLng sydney = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
+
+
