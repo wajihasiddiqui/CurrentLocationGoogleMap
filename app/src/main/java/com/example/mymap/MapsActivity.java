@@ -98,7 +98,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 LatLng mylocation = new LatLng(lat, lon);
                 mMap.addMarker(new MarkerOptions().position(mylocation).title(title));
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 10.2f));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15.2f));
 
             }
         });
@@ -135,7 +135,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     LatLng mylocation = new LatLng(lat, lon);
                     mMap.addMarker(new MarkerOptions().position(mylocation).title(title));
-                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 10.2f));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mylocation, 15.2f));
 
 
                 }
